@@ -1,6 +1,8 @@
 # Racer
 
-A C++ 3D racing game engine built with SDL 1.2 and OpenGL 2.1.
+A C++ 3D racing game using the Kinetica game engine built with SDL 1.2 and OpenGL 2.1.
+
+<img width="1025" height="798" alt="Screenshot 2025-12-30 at 9 27 39 PM" src="https://github.com/user-attachments/assets/ebadc537-a45b-4364-b855-57523380cb48" />
 
 ## Overview
 
@@ -88,3 +90,19 @@ If you experience a black screen:
 
 ### Compilation Warnings
 You may see warnings regarding "deprecated OpenGL functions". This is expected as the engine uses OpenGL 2.1 (Legacy) for simplicity and broad compatibility. These warnings can be ignored for now.
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+You are free to:
+
+Share — copy and redistribute the material in any medium or format
+Adapt — remix, transform, and build upon the material
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+NonCommercial — You may not use the material for commercial purposes.
+For full details, see: https://creativecommons.org/licenses/by-nc/4.0/
+
+As the project creator, I reserve the right to use this material commercially or under any other terms.
