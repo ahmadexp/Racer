@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="source\generic\3dfunctions.h" />
+    <ClInclude Include="source\generic\3DMath.h" />
+    <ClInclude Include="source\generic\BLAH3dfunctions.h" />
+    <ClInclude Include="source\generic\bresenham.h" />
+    <ClInclude Include="source\generic\dashboard\dashbars.h" />
+    <ClInclude Include="source\generic\dashboard\dashbutton.h" />
+    <ClInclude Include="source\generic\dashboard\dashcursor.h" />
+    <ClInclude Include="source\generic\dashboard\dashloop.h" />
+    <ClInclude Include="source\generic\dashboard\dashmenu.h" />
+    <ClInclude Include="source\generic\dashboard\dashonoff.h" />
+    <ClInclude Include="source\generic\dashboard\dashsetup.h" />
+    <ClInclude Include="source\generic\dashboard\dashtext.h" />
+    <ClInclude Include="source\generic\dashboard\dashtime.h" />
+    <ClInclude Include="source\generic\dirlist.h" />
+    <ClInclude Include="source\generic\filesystem.h" />
+    <ClInclude Include="source\generic\frustum.h" />
+    <ClInclude Include="source\generic\generic.h" />
+    <ClInclude Include="source\generic\genericmath.h" />
+    <ClInclude Include="source\generic\genericsettings.h" />
+    <ClInclude Include="source\generic\glhProjectf.h" />
+    <ClInclude Include="source\generic\initvideo.h" />
+    <ClInclude Include="source\generic\input.h" />
+    <ClInclude Include="source\generic\loadbmp.h" />
+    <ClInclude Include="source\generic\loadms3d.h" />
+    <ClInclude Include="source\generic\loadobj.h" />
+    <ClInclude Include="source\generic\lodepng.h" />
+    <ClInclude Include="source\generic\meshbump.h" />
+    <ClInclude Include="source\generic\msviewer.h" />
+    <ClInclude Include="source\generic\normals.h" />
+    <ClInclude Include="source\generic\opengl\Build2DMipMapsGL.h" />
+    <ClInclude Include="source\generic\opengl\loadtexture.h" />
+    <ClInclude Include="source\generic\opengl\loadtga.h" />
+    <ClInclude Include="source\generic\opengl\loadtoif.h" />
+    <ClInclude Include="source\generic\opengl\perspectiveGL.h" />
+    <ClInclude Include="source\generic\readinifiles.h" />
+    <ClInclude Include="source\generic\refreshscreen.h" />
+    <ClInclude Include="source\generic\saveobj.h" />
+    <ClInclude Include="source\generic\sdldraw\drawcircle.h" />
+    <ClInclude Include="source\generic\sdldraw\drawhexagon.h" />
+    <ClInclude Include="source\generic\sdldraw\drawline.h" />
+    <ClInclude Include="source\generic\sdldraw\drawpolygon.h" />
+    <ClInclude Include="source\generic\sdldraw\filtersurface.h" />
+    <ClInclude Include="source\generic\sdldraw\getputpixel.h" />
+    <ClInclude Include="source\generic\sdldraw\loadanddrawsurfaces.h" />
+    <ClInclude Include="source\generic\sdldraw\rotoscale.h" />
+    <ClInclude Include="source\generic\sdldraw\savesurface.h" />
+    <ClInclude Include="source\generic\spherebumpmesh.h" />
+    <ClInclude Include="source\projectloop.h" />
+    <ClInclude Include="source\projectsetup.h" />
+    <ClInclude Include="source\projectspecific\bumpintoworld.h" />
+    <ClInclude Include="source\projectspecific\drawhud.h" />
+    <ClInclude Include="source\projectspecific\drawworld.h" />
+    <ClInclude Include="source\projectspecific\meshes\track.h" />
+    <ClInclude Include="source\projectspecific\meshes\trackturnl.h" />
+    <ClInclude Include="source\projectspecific\meshes\trackturnr.h" />
+    <ClInclude Include="source\projectspecific\play.h" />
+    <ClInclude Include="source\projectspecific\text.h" />
+    <ClInclude Include="source\projectspecific\textures.h" />
+    <ClInclude Include="source\settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Racer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Racer.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE67D0CF-3C13-493C-B73E-D75E25159835}</ProjectGuid>
+    <RootNamespace>Racer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Racer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildStartupDirectory)\source;$(MSBuildStartupDirectory)\source\include;$(MSBuildStartupDirectory)\source\generic;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(MSBuildStartupDirectory)\source\include;$(MSBuildStartupDirectory)\source\generic;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(MSBuildStartupDirectory)\source\lib;$(LibraryPath)</LibraryPath>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(MSBuildStartupDirectory)\source\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(MSBuildStartupDirectory)\source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(MSBuildStartupDirectory)\source\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <PreventDllBinding>
+      </PreventDllBinding>
+      <ForceFileOutput>Enabled</ForceFileOutput>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

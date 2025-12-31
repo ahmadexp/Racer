@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\settings.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectsetup.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectloop.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\bumpintoworld.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\drawhud.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\drawworld.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\play.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\text.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\textures.h">
+      <Filter>source\projectspecific</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\meshes\track.h">
+      <Filter>source\projectspecific\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\meshes\trackturnl.h">
+      <Filter>source\projectspecific\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\projectspecific\meshes\trackturnr.h">
+      <Filter>source\projectspecific\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\opengl\Build2DMipMapsGL.h">
+      <Filter>source\generic\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\opengl\loadtexture.h">
+      <Filter>source\generic\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\opengl\loadtga.h">
+      <Filter>source\generic\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\opengl\loadtoif.h">
+      <Filter>source\generic\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\opengl\perspectiveGL.h">
+      <Filter>source\generic\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\drawcircle.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\drawhexagon.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\drawline.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\drawpolygon.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\filtersurface.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\getputpixel.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\loadanddrawsurfaces.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\rotoscale.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\sdldraw\savesurface.h">
+      <Filter>source\generic\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashbars.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashbutton.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashcursor.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashloop.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashmenu.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashonoff.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashsetup.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashtext.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dashboard\dashtime.h">
+      <Filter>source\generic\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\3dfunctions.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\3DMath.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\BLAH3dfunctions.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\bresenham.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\dirlist.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\filesystem.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\frustum.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\generic.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\genericmath.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\genericsettings.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\glhProjectf.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\initvideo.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\input.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\loadbmp.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\loadms3d.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\loadobj.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\lodepng.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\meshbump.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\msviewer.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\normals.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\readinifiles.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\refreshscreen.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\saveobj.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\generic\spherebumpmesh.h">
+      <Filter>source\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{b5542f45-7f6b-458a-8178-f0731191a31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\generic">
+      <UniqueIdentifier>{1490951a-8ed2-4044-840c-cfb9eab6e569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\generic\opengl">
+      <UniqueIdentifier>{82dacd24-2a95-43ce-ac14-1260535dc748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\generic\sdl">
+      <UniqueIdentifier>{0a086725-141f-4919-a167-573a0e128675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\projectspecific">
+      <UniqueIdentifier>{d1956069-cdcb-4ee7-867e-2620195a2b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\projectspecific\Meshes">
+      <UniqueIdentifier>{0dbd70bf-7cec-4cac-bdeb-110d90beb035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\generic\dashboard">
+      <UniqueIdentifier>{7cf54286-93fc-4a2e-a5df-4e324234c3ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Racer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Racer.rc" />
+  </ItemGroup>
+</Project>
