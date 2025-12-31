@@ -44,7 +44,7 @@ sudo apt-get install build-essential meson ninja-build libsdl1.2-dev libglu1-mes
 
 2.  **Compile the project:**
     ```bash
-    ninja -C build
+    meson compile -C build
     ```
 
 ## Running the Game
