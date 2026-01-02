@@ -1,12 +1,13 @@
 void drawworld(){
 
 	//cam stats
-	float camfov=80.f;
+	//float camfov=80.f;
 	float camnear=0.01f;
 	float camfar=100.f;
 
 	//prep for drawing
-	glEnable(GL_TEXTURE_2D);
+	if(texmode)glEnable(GL_TEXTURE_2D);
+	else glDisable(GL_TEXTURE_2D);
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 

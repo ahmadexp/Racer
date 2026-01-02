@@ -10,8 +10,19 @@ bool usejoystick=1;
 JOYINFO joystick;
 #endif
 
+extern bool shutdownprogram;
+
 float playerposx,playerposy,playerposz,playerposmovx,playerposmovy,playerposmovz;
 float playerangx,playerangy,playerangz,playerangmovx,playerangmovy,playerangmovz;
+
+bool showgps=1;
+bool texmode=1;
+bool ghostmode=0;
+bool mousecontrol=0;
+bool autoexit=0;
+bool thirdperson=0;
+float camfov=80.f;
+
 
 #define maxtracksizex (10)
 #define maxtracksizez (10)
@@ -34,6 +45,8 @@ int lapcount;
 
 float laptime;
 float bestlaptime;
+
+void resetgame();
 
 #include "projectspecific/textures.h"
 #include "projectspecific/text.h"

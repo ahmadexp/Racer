@@ -8,6 +8,57 @@ void play(){
 			if(usejoystick==1){usejoystick=0;}else{usejoystick=1;}
 		}
 
+	if(keystate[SDLK_1]==2)camfov-=5;
+	if(keystate[SDLK_2]==2)camfov+=5;
+	if(keystate[SDLK_3]==2)texmode=!texmode;
+	if(keystate[SDLK_4]==2)ghostmode=!ghostmode;
+	
+	int tx = (int)floor(playerposx+0.5f);
+	int tz = (int)floor(playerposz+0.5f);
+	if(tx>=0 && tx<maxtracksizex && tz>=0 && tz<maxtracksizez){
+			if(keystate[SDLK_5]==2){ // Prev
+				track[tx][tz]--;
+				if(track[tx][tz]<1)track[tx][tz]=12;
+				resetgame();
+			}
+			if(keystate[SDLK_6]==2){ // Next
+				track[tx][tz]++;
+				if(track[tx][tz]>12)track[tx][tz]=1;
+				resetgame();
+			}
+			if(keystate[SDLK_7]==2){ // Rotate
+				int val = track[tx][tz];
+				if(val>=1 && val<=4) track[tx][tz] = 1 + (val%4);
+				else if(val>=5 && val<=8) track[tx][tz] = 5 + ((val-5+1)%4);
+				else if(val>=9 && val<=12) track[tx][tz] = 9 + ((val-9+1)%4);
+				resetgame();
+			}
+	}
+
+	if(keystate[SDLK_8]==2){ // Save
+			ofstream pfile("Media/track.dat");
+			for(int x=0;x<maxtracksizex;x++)
+			for(int z=0;z<maxtracksizez;z++)
+				pfile << track[x][z] << " ";
+			pfile.close();
+	}
+	if(keystate[SDLK_9]==2){ // Load
+			ifstream pfile("Media/track.dat");
+			if(!pfile.fail()){
+				for(int x=0;x<maxtracksizex;x++)
+				for(int z=0;z<maxtracksizez;z++)
+					pfile >> track[x][z];
+				pfile.close();
+				resetgame();
+			}
+	}
+	
+	if(keystate[SDLK_m]==2)mousecontrol=!mousecontrol;
+	if(keystate[SDLK_e]==2)autoexit=!autoexit;
+	if(keystate[SDLK_p]==2)thirdperson=!thirdperson;
+	if(keystate[SDLK_g]==2)showgps=!showgps;
+	if(keystate[SDLK_q]==2)shutdownprogram=1;
+
 	//get input
 	float inputspeed=0,inputangle=0;
 	bool up=0,down=0,left=0,right=0;
@@ -45,6 +96,17 @@ void play(){
 		inputangle=atan2((float)right-(float)left,(float)up-(float)down)-90.f*radiansindegree;
 	}else{
 		inputspeed=0.f;
+	}
+
+	centercursor = mousecontrol;
+	if(mousecontrol){
+		float mxc = (float)cursorxmov[0]/20.0f;
+		float myc = (float)cursorymov[0]/-20.0f;
+		inputspeed+=myc;
+		inputangle+=mxc;
+		// override angle calculation if moving simply? 
+		// Actually let's just make mouse X turn the car
+		playerangmovy+=mxc*0.05f;
 	}
 	//clarafy that input
 	float turn=inputspeed*cos(inputangle);
@@ -100,7 +162,7 @@ void play(){
 			x,0,z,0,(0.f+trackangle)*radiansindegree,0,
 			collisionmesh,1,1);
 	}*/
-	bumpintoworld(&playerposx,&playerposz,0.05f);
+	if(!ghostmode)bumpintoworld(&playerposx,&playerposz,0.05f);
 	//correct movement speed
 	playerposmovx=playerposx-oldx;
 	playerposmovy=playerposy-oldy;
@@ -117,6 +179,7 @@ void play(){
 		lapcount++;
 		if(laptime<bestlaptime)bestlaptime=laptime;
 		laptime=0;
+		if(autoexit)shutdownprogram=1;
 	}
 	if(oldtrackposition==0 && newtrackposition==tracklength){
 		lapcount--;
@@ -128,8 +191,10 @@ void play(){
 	camangy+=(playerangy-(camangy+90.f*radiansindegree))*0.1f;
 
 	//position the camera
-	camposx=playerposx-cos(camangy-90.f*radiansindegree)*0.15f;
-	camposy=playerposy+0.04f;
-	camposz=playerposz-sin(camangy-90.f*radiansindegree)*0.15f;
+	float dist = thirdperson ? 0.4f : 0.15f;
+	float h = thirdperson ? 0.2f : 0.04f;
+	camposx=playerposx-cos(camangy-90.f*radiansindegree)*dist;
+	camposy=playerposy+h;
+	camposz=playerposz-sin(camangy-90.f*radiansindegree)*dist;
 
 }
