@@ -1,4 +1,4 @@
-# Racer DS Folder
+# Racer DSi/DS port
 
 Demo video: [demo/racer_demo.mp4](demo/racer_demo.mp4)
 
@@ -12,7 +12,7 @@ This folder contains the Nintendo DSi/DS port for Racer that runs at 60 FPS on a
 
 ## Dependencies
 
-- BlocksDS toolchain (`BLOCKSDS` environment variable or default path in `Makefile`)
+- [BlocksDS](https://blocksds.skylyrac.net/) toolchain (`BLOCKSDS` environment variable or default path in `Makefile`)
 
 ## Build
 
