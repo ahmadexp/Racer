@@ -1,6 +1,6 @@
 # Racer DSi/DS port
 
-<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/de714941-7dae-4a70-a1b5-602c82f7857b" />
+https://github.com/user-attachments/assets/de714941-7dae-4a70-a1b5-602c82f7857b
 
 This folder contains the Nintendo DSi/DS port for Racer that runs at 60 FPS on an actual DSi (and emulators, of course).
 

@@ -10,7 +10,7 @@ Racer is a lightweight 3D game engine designed for racing simulations. It utiliz
 
 ## Nintendo DSi/DS Port
 
-<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/de714941-7dae-4a70-a1b5-602c82f7857b" />
+https://github.com/user-attachments/assets/de714941-7dae-4a70-a1b5-602c82f7857b
 
 Racer has been ported to the Nintendo DSi/DS platform using the BlocksDS toolchain. The DSi version runs at 60 FPS on actual hardware and emulators, featuring a slightly downscaled track texture optimized for the platform.
 More in the [Racer DS README](ds/README.md)!
