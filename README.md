@@ -8,12 +8,11 @@ A C++ 3D racing game using the Kinetica game engine built with SDL 1.2 and OpenG
 
 Racer is a lightweight 3D game engine designed for racing simulations. It utilizes SDL (Simple DirectMedia Layer) for window management and input handling, and OpenGL (Fixed Function Pipeline) for rendering. The engine handles 3D camera transformations, basic physics, texture loading (BMP and PNG via LodePNG), and HUD rendering.
 
-## Nintendo DSi/DS Port
+## Nintendo DSi/DS Port (contributed by [@r00tman](https://github.com/r00tman))
 
 https://github.com/user-attachments/assets/de714941-7dae-4a70-a1b5-602c82f7857b
 
-Racer has been ported to the Nintendo DSi/DS platform using the BlocksDS toolchain. The DSi version runs at 60 FPS on actual hardware and emulators, featuring a slightly downscaled track texture optimized for the platform.
-More in the [Racer DS README](ds/README.md)!
+Racer has been ported to Nintendo DSi/DS using the BlocksDS toolchain. The DSi version runs at 60 FPS on actual hardware and is slightly different from the original. More in the [Racer DS README](ds/README.md)!
 
 ## Technology Stack
 
